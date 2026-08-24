@@ -1,0 +1,56 @@
+<UserControl
+    x:Class="Valorant_Instalocker.Views.SettingsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="*" /></Grid.RowDefinitions>
+
+        <TextBlock Margin="2,0,2,18" Style="{StaticResource PageTitle}" Text="Settings" />
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
+
+            <Border Margin="0,0,9,0" Style="{StaticResource SurfaceCard}">
+                <Grid>
+                    <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="Auto" /><RowDefinition Height="Auto" /><RowDefinition Height="Auto" /><RowDefinition Height="*" /></Grid.RowDefinitions>
+                    <TextBlock FontSize="19" FontWeight="SemiBold" Foreground="{DynamicResource TextPrimary}" Text="Behavior" />
+
+                    <Grid Grid.Row="1" Margin="0,24,0,0">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions>
+                        <TextBlock VerticalAlignment="Center" FontWeight="SemiBold" Foreground="{DynamicResource TextPrimary}" Text="Automatic map rules" />
+                        <CheckBox x:Name="MapRulesCheckBox" Grid.Column="1" VerticalAlignment="Center" Checked="Preference_Changed" Content="Enabled" Style="{StaticResource ModernCheckBox}" Unchecked="Preference_Changed" />
+                    </Grid>
+
+                    <Rectangle Grid.Row="2" Height="1" Margin="0,20" Fill="{DynamicResource SeparatorBrush}" />
+
+                    <Grid Grid.Row="3">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions>
+                        <TextBlock VerticalAlignment="Center" FontWeight="SemiBold" Foreground="{DynamicResource TextPrimary}" Text="Interface animations" />
+                        <CheckBox x:Name="AnimationsCheckBox" Grid.Column="1" VerticalAlignment="Center" Checked="Preference_Changed" Content="Enabled" Style="{StaticResource ModernCheckBox}" Unchecked="Preference_Changed" />
+                    </Grid>
+
+                    <TextBlock x:Name="SettingsMessage" Grid.Row="4" Margin="0,24,0,0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="{DynamicResource AccentSuccess}" Text="Saved" Visibility="Collapsed" />
+                </Grid>
+            </Border>
+
+            <Border Grid.Column="1" Margin="9,0,0,0" Style="{StaticResource SurfaceCard}">
+                <Grid>
+                    <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="Auto" /><RowDefinition Height="*" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
+                    <TextBlock FontSize="19" FontWeight="SemiBold" Foreground="{DynamicResource TextPrimary}" Text="Local data" />
+
+                    <Border Grid.Row="1" Margin="0,24,0,0" Padding="14" Background="{DynamicResource ElevatedBackground}" CornerRadius="8">
+                        <StackPanel>
+                            <TextBlock FontSize="10" FontWeight="SemiBold" Foreground="{DynamicResource TextSecondary}" Text="STORAGE" />
+                            <TextBlock x:Name="StoragePathText" Margin="0,7,0,0" Foreground="{DynamicResource TextMuted}" TextTrimming="CharacterEllipsis" ToolTip="{Binding Text, RelativeSource={RelativeSource Self}}" />
+                        </StackPanel>
+                    </Border>
+
+                    <StackPanel Grid.Row="3">
+                        <Button Margin="0,0,0,8" Click="OpenDataFolder_Click" Content="Open data folder" Style="{StaticResource SecondaryButton}" />
+                        <Button x:Name="ClearRulesButton" Click="ClearRules_Click" Content="Clear all map rules" Style="{StaticResource DangerButton}" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

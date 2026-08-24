@@ -1,0 +1,57 @@
+<UserControl
+    x:Class="Valorant_Instalocker.Views.AboutView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="*" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
+
+        <TextBlock Margin="2,0,2,18" Style="{StaticResource PageTitle}" Text="About" />
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
+
+            <Border Margin="0,0,9,0" Style="{StaticResource SurfaceCard}">
+                <Grid>
+                    <Grid.RowDefinitions><RowDefinition Height="*" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Border Width="112" Height="112" HorizontalAlignment="Center" Background="{DynamicResource ElevatedBackground}" CornerRadius="22"><Image Margin="8" RenderOptions.BitmapScalingMode="HighQuality" Source="/Assets/branding/big-instalock.png" /></Border>
+                        <TextBlock Margin="0,18,0,0" HorizontalAlignment="Center" FontSize="26" FontWeight="SemiBold" Foreground="{DynamicResource TextPrimary}" Text="Big Instalock" />
+                        <TextBlock Margin="0,6,0,0" HorizontalAlignment="Center" Foreground="{DynamicResource TextSecondary}" Text="Version 2.0.0" />
+                    </StackPanel>
+
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
+                        <Border Margin="0,0,5,0" Padding="14" Background="{DynamicResource ElevatedBackground}" CornerRadius="8">
+                            <StackPanel><TextBlock FontSize="10" Foreground="{DynamicResource TextSecondary}" Text="CREATOR" /><TextBlock Margin="0,6,0,0" FontWeight="SemiBold" Foreground="{DynamicResource TextPrimary}" Text="BIG J" /></StackPanel>
+                        </Border>
+                        <Border Grid.Column="1" Margin="5,0,0,0" Padding="14" Background="{DynamicResource ElevatedBackground}" CornerRadius="8">
+                            <StackPanel><TextBlock FontSize="10" Foreground="{DynamicResource TextSecondary}" Text="PLATFORM" /><TextBlock Margin="0,6,0,0" FontWeight="SemiBold" Foreground="{DynamicResource TextPrimary}" Text="Windows" /></StackPanel>
+                        </Border>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <Border Grid.Column="1" Margin="9,0,0,0" Style="{StaticResource SurfaceCard}">
+                <Grid>
+                    <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="*" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
+                    <TextBlock FontSize="19" FontWeight="SemiBold" Foreground="{DynamicResource TextPrimary}" Text="Project" />
+
+                    <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock HorizontalAlignment="Center" FontFamily="Consolas" FontSize="42" Foreground="{DynamicResource AccentPrimary}" Text="&lt;/&gt;" />
+                        <TextBlock Margin="0,15,0,0" HorizontalAlignment="Center" FontSize="21" FontWeight="SemiBold" Foreground="{DynamicResource TextPrimary}" Text="Open source" />
+                    </StackPanel>
+
+                    <Button Grid.Row="2" Click="ProjectGithub_Click" Content="Open project on GitHub ↗" Style="{StaticResource ModernButton}" />
+                </Grid>
+            </Border>
+        </Grid>
+
+        <Border Grid.Row="2" Margin="0,18,0,0" Padding="5" Background="{DynamicResource ElevatedBackground}" BorderBrush="{DynamicResource DefaultBorder}" BorderThickness="1" CornerRadius="8">
+            <Grid>
+                <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions>
+                <TextBlock Margin="11,0,0,0" VerticalAlignment="Center" FontSize="11" FontWeight="SemiBold" Foreground="{DynamicResource TextSecondary}" Text="CREDITS" />
+                <Button Grid.Column="1" MinHeight="34" Padding="13,7" Click="BerkweGithub_Click" Content="Berkwe / Valorant-Instalocker ↗" Style="{StaticResource GhostButton}" />
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

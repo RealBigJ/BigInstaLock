@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Valorant_Instalocker</RootNamespace>
+    <AssemblyName>BigInstalock</AssemblyName>
+    <Title>Big Instalock</Title>
+    <Product>Big Instalock</Product>
+    <Authors>BIG J</Authors>
+    <Description>Lightweight Valorant agent pick utility.</Description>
+    <Version>2.0.0</Version>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\icons\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\branding\big-instalock.png" />
+    <None Remove="Assets\maps\**\*.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\icons\icon.ico" />
+    <Resource Include="Assets\branding\big-instalock.png" />
+    <Resource Include="Assets\maps\**\*.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageReference Include="RadiantConnect" Version="10.6.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+  </ItemGroup>
+</Project>
+

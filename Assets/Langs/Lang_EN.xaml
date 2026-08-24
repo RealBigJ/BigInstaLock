@@ -1,0 +1,41 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="HomeTab">Manual pick</system:String>
+    <system:String x:Key="MacrosTab">Map rules</system:String>
+    <system:String x:Key="SettingsTab">Settings</system:String>
+    <system:String x:Key="AboutTab">About</system:String>
+
+    <system:String x:Key="StatusWaiting">Waiting for agent select</system:String>
+    <system:String x:Key="LockAgentBtn">Arm lock</system:String>
+    <system:String x:Key="OnlySelectCheckBox">Select only</system:String>
+    <system:String x:Key="CancelBtn">Cancel armed pick</system:String>
+    <system:String x:Key="QuitPreGameBtn">Leave agent select</system:String>
+
+    <system:String x:Key="MacrosTitle">Map rules</system:String>
+    <system:String x:Key="MacrosDesc">Save one agent and action per map. A manual pick always takes priority.</system:String>
+    <system:String x:Key="MapRulesEnabled">Automation enabled</system:String>
+    <system:String x:Key="MapRuleEditorTitle">Create a rule</system:String>
+    <system:String x:Key="MapRuleEditorDesc">Choose what Big Instalock should do on this map.</system:String>
+    <system:String x:Key="MapLabel">MAP</system:String>
+    <system:String x:Key="AgentLabel">AGENT</system:String>
+    <system:String x:Key="ActionLabel">ACTION</system:String>
+    <system:String x:Key="LockMode">Lock instantly</system:String>
+    <system:String x:Key="SelectMode">Select only</system:String>
+    <system:String x:Key="AddRuleButton">Save rule</system:String>
+    <system:String x:Key="UpdateRuleButton">Update rule</system:String>
+    <system:String x:Key="CancelEditButton">Cancel editing</system:String>
+    <system:String x:Key="MapRulesListTitle">Saved rules</system:String>
+    <system:String x:Key="RulesCount">{0} configured</system:String>
+    <system:String x:Key="EmptyRulesTitle">No map rules</system:String>
+    <system:String x:Key="EmptyRulesDesc">Choose a map and agent to save your first automatic pick.</system:String>
+    <system:String x:Key="MapRuleValidation">Choose a map, agent and action.</system:String>
+    <system:String x:Key="MapDataError">Map or agent data could not be loaded. Check your connection and try again.</system:String>
+
+    <system:String x:Key="PhaseIdle">In lobby</system:String>
+    <system:String x:Key="PhasePregame">Agent select</system:String>
+    <system:String x:Key="PhaseIngame">In game</system:String>
+    <system:String x:Key="PhaseUnknown">Waiting for VALORANT</system:String>
+</ResourceDictionary>
