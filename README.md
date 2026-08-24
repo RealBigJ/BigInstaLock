@@ -7,6 +7,10 @@ Windows desktop utility for manual VALORANT agent picks and automatic map rules.
 
 ![Big InstaLock manual pick](Assets/screenshots/dashboard.png)
 
+## Download
+
+[Download the latest Windows x64 release](https://github.com/RealBigJ/BigInstaLock/releases/latest). The build is self-contained and does not require a separate .NET installation.
+
 ## Features
 
 - Manual agent selection with instant lock or select-only mode.
