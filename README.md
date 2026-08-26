@@ -4,7 +4,7 @@
 > [!WARNING]
 > Big InstaLock is provided for educational and research purposes only. Use it at your own risk. The project is not affiliated with or endorsed by Riot Games, and its authors are not responsible for account restrictions, data loss, service interruptions or any other consequences of its use.
 
-![Big InstaLock manual pick](Assets/screenshots/map-rules.png)
+![Big InstaLock manual pick](Assets/screenshots/screenshot.png)
 
 ## Download
 
