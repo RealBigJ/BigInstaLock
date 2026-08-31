@@ -6,8 +6,6 @@
 >
 > Big InstaLock is provided for educational and research purposes only. Use it at your own risk. The project is not affiliated with or endorsed by Riot Games, and its authors are not responsible for account restrictions, data loss, service interruptions or any other consequences of its use. Review Riot's current policies before running it.
 
-> [!NOTE]
-> In August 2026, [Dotesports reported](https://dotesports.com/valorant/news/riot-shuts-down-valorant-agent-instalock-app-in-crushing-blow-to-jett-mains-everywhere) that Riot sent a cease-and-desist to an instalock companion app. This report is not an official Riot policy notice, but it reinforces the account-risk warning above.
 
 ![Big InstaLock manual pick](Assets/screenshots/screenshot.png)
 
