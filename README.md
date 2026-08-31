@@ -2,7 +2,7 @@
 
 
 > [!CAUTION]
-> **Account risk:** Riot's [Terms of Service](https://www.riotgames.com/en/terms-of-service?tab=t.0) prohibit unauthorized third-party programs, including scripts, bots and automation programs, that interact with Riot Services. Big InstaLock automates agent selection by connecting to the VALORANT client, so using it may put your Riot account at risk. Riot may apply temporary or permanent suspensions, account termination, hardware bans, matchmaking restrictions or other penalties. There is no guarantee that an instalock tool is authorized or safe to use.
+> **Riot enforcement warning:** Following Riot Games' announcement concerning bans for instalocking through third-party applications, use Big InstaLock entirely at your own risk. Riot's [Terms of Service](https://www.riotgames.com/en/terms-of-service?tab=t.0) prohibit unauthorized third-party programs, including scripts, bots and automation programs, that interact with Riot Services. Big InstaLock automates agent selection by connecting to the VALORANT client, so using it may put your Riot account at risk. Riot may apply temporary or permanent suspensions, account termination, hardware bans, matchmaking restrictions or other penalties. There is no guarantee that an instalock tool is authorized or safe to use.
 >
 > Big InstaLock is provided for educational and research purposes only. Use it at your own risk. The project is not affiliated with or endorsed by Riot Games, and its authors are not responsible for account restrictions, data loss, service interruptions or any other consequences of its use. Review Riot's current policies before running it.
 
