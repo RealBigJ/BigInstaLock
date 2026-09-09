@@ -3,7 +3,7 @@
 
 > [!CAUTION]
 > **Riot enforcement warning:** Following Riot Games' announcement concerning bans for instalocking through third-party applications, use Big InstaLock entirely at your own risk. 
-Big InstaLock automates agent selection by connecting to the VALORANT client, so using it may put your Riot account at risk. Riot may apply temporary or permanent suspensions, account termination, hardware bans, matchmaking restrictions or other penalties. There is no guarantee that an instalock tool is authorized or safe to use.
+Big InstaLock automates agent selection by connecting to the VALORANT client, so using it may put your Riot account at risk.
 
 
 
